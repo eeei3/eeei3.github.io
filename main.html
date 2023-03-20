@@ -8,37 +8,27 @@
     body {
         background-image: url("assets/background.jpg")
     }
-    header{
+    header.normal{
+        color:#000000;
+        opacity: 1;
+    }
+    header.title{
         text-align: center;
         font-size: 35px;
         color:#004d66;
         
     }
-    funnybox{
-        float: center;
-        background-color: #737373;
-        margin: 1000px;
-        width: 100000px;
-        height: 1000px;
-        opacity: 0.5;
-        padding: 30px;
+    div.first{
         text-align: center;
+        background: rgba(115, 115, 115, 0.5);
     }
-    funnybox ul{
-        list-style-type: none;
-        padding: 0;
     }
     </style>
-    <header>
-        <h1>Welcome to my page!</h1>
-    </header>
-
-<section>
-        <funnybox>
-            <ul>
-                <h1>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</h1>
-            </ul>
-        </funnybox>
-</section>
+<header class="title">
+    <h1>Welcome to my page!</h1>
+</header>
+<div class="first">
+<h1 class="normal">hello!</h1>
+</div>
 </body>
 </html>
