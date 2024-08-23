@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<meta charset="utf-8">
 <html>
 
 <head>
@@ -7,118 +8,132 @@
 
 <body>
 
-<meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <style>
-*{
-  box-sizing: border-box;
+* {
+    box-sizing: border-box;
 }
 
-.links {
-  float: left;
-  padding: 20px;
-  /*width: 20%;*/
-  background-color: #B8860B;
+.image {
+    margin: 10px auto 20px;
+    display: block;
+}
+
+.page::after {
+    content:"";
+    clear: both;
+    display: table;
+}
+
+.header {
+    width:100%;
+    float:right;
+}
+.leftbar {
+    width:33%;
+    float:left;
+    display: inline-block;
+}
+.leftsection {
+    float:left;
+    width:100%;
+    padding: 20px;
+}
+.smallbox {
+    display: flex;
+    flex-direction: column;
+}
+.smallbox > div {
+    background-color: #00b3b3;
+    margin:10px;
+}
+.rightbar{
+    width:67%;
+    float:right;
 }
 .articles {
-  width: 80%;
-  float: left;
-  -webkit-flex: 3;
-  -ms-flex: 3;
-  flex: 3;
-}
-
-section{
-  display: -webkit-flex;
-  display: flex;
-}
-
-header{
-  background-color:#7FFFD4;
-  padding: 30px;
-  text-align: center;
-  font-size: 35px;
-  color: #00008B;
-}
-
-nav{
-  /*height: 300px;*/
-  -webkit-flex: 1;
-  -ms-flex: 1;
-  flex: 1;}
-
-nav ul{
-  list-style-type: none;
-  padding: 0;
-  /*-webkit-flex: 1;
-  -ms-flex: 1;
-  flex: 1;*/}
-
-article {
-  float: left;
-  background-color: #f1f1f1;
-  -webkit-flex: 3;
-  -ms-flex: 3;
-  flex: 3;
-}
-@media (max-width: 600px) {
-  section {
-    -webkit-flex-direction: column;
+    display: flex;
     flex-direction: column;
-  }
+}
+.articles > div {
+    margin:10px;
+    padding:20px;
+    background-color: #1a66ff;
 }
 </style>
 
-<header>
+<div class = "page">
+    
+    <div class = "header">
 
-	<img src="assets/silly.jpg" alt="Shoopdawoop!" style="width:500px;height:500px;">
+	<img class="image" src="assets/finishedmeme1.JPG" alt="mathmaxxing" style="width:60%;height:60%;">
 
-	<h1>Welcome to eeei3.github.io</h1>
-	<h2>Surely if you remove your tires you won't have a flat anymore</h2>
+	<h1 style="text-align:center">Welcome to eeei3.github.io</h1>
 
-</header>
+	<h2 style="text-align:center">"Surely if you remove your wheels you won't have a flat anymore"</h2>
 
-<section>
-  <nav class="links">
-    <ul>
-      <li><h4>Want to see what I am working on?</h4></li>
-      <li>Nothing really worth showing. But I promise you, I am working on it.</li>
-      <!--<li><div><a href="https://github.com/eeei3/bananaserver">Check out Banana Server!</a></div></li>
-      <li><div><a href="https://www.youtube.com/channel/UCoqO_VPt0IbYzikSw5lZTsg">Or maybe my YouTube page!</a></div></li>
-      <li><div><a href="https://github.com/eeei3/eeeeeSpider">Check out my CS 20 Final!</a></div></li>
-      <li><div><a href="https://github.com/eeei3/Credyt">Check out Credyt!</a></div></li>-->
-      <li><h4>About me!</h4></li>
-      <li><div><a href="aboutme.html">Here!</a></div></li>
+    </div>
 
-    </ul>
-  </nav>
-  <nav class="articles">
-  <article>
-	  <h1>My first update in months</h1>
-	  <p> 
-	  I have really left this in the mothballs haven't I? Well not anymore.
-	  What have I been working on? Mostly school. But I am starting to concentrate
-	  more on learning C. I am planning also to learn Lua after I feel confident
-	  enough in my C abilities, enough where I feel like I can learn a new language
-	  without forsaking another. After Lua I plan to do probably some front end languages.
-	  As for C, I am essentially remaking the program redyt, made by Bugswriter. You can find
-	  his script on GitHub. I chose to remake this because I thought it was of sufficient
-	  difficulty and that I would have also like to use this program, but it has a dwm
-	  dependancy. I have a bit of a, philosophy lets call it, where I don't really like
-	  dependancies. The fewer the better if you ask me. Unless its something basically everyone
-	  has installed, like Python. So to cut down on some dependancies, I have written a focused
-	  JSON parser in Python that is made for only this program.</p>
-  </article>
+    <div class = "leftbar" style="background-color: #80ffff">
 
-  <article>
-    <h1>Articles are cool</h1>
-    <p>I might put more stuff. IDK, but welcome to my page. Stay a little longer.</p>
-  </article>
-  </nav>
+	<h2>Want to see what I am working on?</h2>
+
+	    <div class = "leftsection">
+
+		<div class = "smallbox">
+		    <div class = "smallbox">
+			<p>This website! Read my articles! Not like I make anything from it</p>
+		    </div>
+		    <div class = "smallbox">
+			<p>My resume! Gotta find work somewhere</p>
+		    </div>
+		</div>
+
+	    </div>
+	
+	<h2 style="width:60%;">About me!</h2>
+	<img class="image" src="assets/findthemagic.png" alt="Find the magic" style="width:40%;height:40%;">
+	<center><p>find the magic!</p></center>
+
+	    <div class = "leftsection">
+
+		<div class = "abtme" style="background-color: #00b3b3">
+		    <p>
+			I am a 19 year old UTSC student who is passionate about tech. Whether it is Linux, hardware,
+			or programming. Everything interests me and I want to know as much as I can about anything, but my
+			main interests lay in hardware, OSes, application dev. I also have an interest in networking/server
+			related programming, but not very interested in cloud stuff. Why? Mainly because I hate the cloud.
+		    </p>
+		</div>
+
+		<div class = "abtme" style="background-color: #00b3b3">
+		    <p>
+			I currently use a Dell XPS 15. I have a Steam Deck dock that I use to plug in all my peripherals,
+			being my Wooting 60HE and Logitch G Pro. I use Gentoo Linux on my laptop.
+		    </p>
+		</div>
+
+	    </div>
+
+    </div>
+
+    <div class = "rightbar" style="background-color: #6699ff">
+	<h2>My Thoughts</h2>
+
+	<div class = "articles">
+	    <div class = "articles" >
+		<h3>I Finally updated my website</h3>
+		<p>Huzzah!</p>
+	    </div>
+	</div>
+
+    </div>
+
+</div>
 
 
-</section>
+
 </body>
 
 </html>
